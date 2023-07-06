@@ -1,0 +1,19 @@
+.primaryHero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - var(--header-height));
+
+  img {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+  h2 {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,42 @@
+.header {
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--color-grey-900);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0 var(--size-4);
+  }
+
+  a {
+    color: var(--color-grey-100);
+    font-size: var(--size-4);
+  }
+
+  a:hover,
+  a:active,
+  a.active {
+    color: var(--color-grey-200);
+  }
+
+  @media (min-width: 768px) {
+    ul {
+      gap: 0.5rem;
+    }
+
+    a {
+      font-size: var(--size-5);
+    }
+  }
+}

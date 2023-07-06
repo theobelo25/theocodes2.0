@@ -1,0 +1,14 @@
+.projectItem {
+  position: relative;
+
+  .image-container {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  .content {
+    position: relative;
+    z-index: 10;
+  }
+}

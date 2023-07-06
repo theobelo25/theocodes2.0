@@ -1,0 +1,54 @@
+.freelance-project-list,
+.featured-project-list {
+  h2 {
+    grid-column: span 12;
+  }
+  .projects {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+
+    .project {
+      margin-bottom: 0;
+      grid-column: span 6;
+    }
+
+    @media (max-width: 800px) {
+      .project {
+        grid-column: span 12;
+      }
+    }
+  }
+}
+.professionalProjectList {
+  @media (max-width: 50rem) {
+    .project {
+      &:not(:first-of-type) {
+        margin-top: 3rem;
+      }
+    }
+  }
+  .project:nth-of-type(2n) {
+    .professional-project {
+      flex-direction: row-reverse;
+
+      @media (max-width: 50rem) {
+        flex-direction: column-reverse;
+      }
+    }
+
+    @media (max-width: 50rem) {
+      flex-direction: column-reverse;
+
+      &:not(:first-of-type) {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+.projects {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
